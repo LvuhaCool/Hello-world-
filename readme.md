@@ -5,7 +5,445 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Luxestate</title>
-    <link rel="stylesheet" href="./style.css">
+    <style>
+        
+    color: #fff;
+}
+.location-melbourn {
+    padding-left: 15px;
+    padding-top: 12px;
+}
+.location-australia {
+    padding-left: 15px;
+    padding-top: 12px;
+}
+.add-line h3 {
+    font-size: 25px;
+    margin-top: 75px;
+    margin-bottom: 40px;
+    margin-left: 130px;
+}
+.add-line p {
+    font-size: 13px;
+    line-height: 30px;
+    margin-left: 130px;
+}
+.add-line-right p {
+    margin-left: 0;
+    margin-right: 130px;
+}
+.add-line h3:last-of-type {
+    margin-top: 25px;
+}
+.show-more {
+    font-size: 18px;
+    background: #1f373d;
+    padding: 30px 70px 30px 55px;
+    display: inline-block;
+    margin-left: 130px;
+    color: #fff;
+    margin-top: 60px;
+    border-radius: 3px;
+}
+footer {
+    background: #1f373d;
+    color: #fff;
+    padding-top: 50px;
+    padding-bottom: 80px;
+}
+.footer-block {
+    display: flex;
+    justify-content: space-between;
+}
+.footer-block h3 {
+    font-size: 40px;
+}
+.footer-search input[type=text] {
+    width: 442px;
+    height: 70px;
+    color: #919eb1;
+    padding-left: 27px;
+    font-size: 15px;
+    background-image: url(./img/right.png);
+    background-size: 30px, 17px;
+    background-repeat: no-repeat;
+    background-position: 94%;
+}
+hr {
+    opacity: 0.3;
+    margin-top: 47px;
+    margin-bottom: 70px;
+}
+.footer-links {
+    display: flex;
+    justify-content: space-between;
+    padding-right: 90px;
+}
+.footer-link {
+    display: flex;
+    flex-direction: column;
+}
+.footer-links-logo {
+    font-size: 25px;
+    margin-right: 26%;
+}
+.footer-link p {
+    text-transform: uppercase;
+    font-size: 13px;
+    color: #919eb1;
+    margin-bottom: 35px;
+}
+.footer-link a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 13px;
+    margin-bottom: 20px;
+}
+.footer-link a:hover {
+    opacity: 0.4;
+}
+@media screen and (max-width: 1100px) {
+    .intro .intro-text {
+        right: 80px;
+    }
+    .intro-img {
+        margin-top: 100px;
+    }
+    .intro-img .intro-text {
+        padding-top: 50px;
+    }
+     .intro .intro-contacts {
+        margin-top: 100px;
+    }
+    .menu li a.logo {
+        margin-right: 20px;
+    }
+    .cards {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        grid-column-gap: 0px;
+        grid-row-gap: 30px;
+    }
+    .apart .buttons-search {
+        margin-left: 4%;
+    }
+    .steps-container {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .step-block {
+        margin-top: 20px;
+    }
+    .steps-text, .step h2 {
+        margin-left: 5%;
+        margin-bottom: 15px;
+    }
+    .agent-cards {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .agent-card {
+        margin-top: 10px;
+    }
+    .add-line {
+        flex-direction: column;
+    }
+    .location {
+        margin-right: 200px;
+    }
+    .add-line {
+        margin-left: 50px;
+    }
+    .add-line h3 {
+        font-size: 25px;
+        margin-top: 75px;
+        margin-bottom: 40px;
+        margin-left: 5%;
+    }
+    .add-line p {
+        margin-left: 5%;
+    }
+    .add-line-right {
+        margin-left: 5%;
+        margin-right: 0;
+    }
+}
+@media screen and (max-width: 950px) {
+    .intro .intro-text {
+        right: 120px;
+    }
+    .menu {
+        display: block;
+    }
+    .menu li a {
+        margin-top: 5px;
+    }
+    .menu li a:hover {
+        background: none;
+    }
+    .menu li a.logo {
+        margin-left: 82%;
+    }
+    .cards {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        grid-column-gap: 0px;
+        grid-row-gap: 30px;
+    }
+    .apart input[type=submit] {
+        border-radius: 4px;
+    }
+    .apart .all {
+        margin-right: 30px;
+    }
+    .steps-container {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .step-block {
+        margin-top: 20px;
+    }
+    .steps-text, .step h2 {
+        margin-left: 5%;
+        margin-bottom: 15px;
+    }
+    .agent-cards {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .agent-card {
+        margin-top: 10px;
+    }
+    .add-line {
+        flex-direction: column;
+    }
+    .location {
+        font-size: 15px;
+        height: 75px;
+    }
+    .add-line h3 {
+        font-size: 25px;
+        margin-top: 75px;
+        margin-bottom: 40px;
+        margin-left: 5%;
+    }
+    .add-line p {
+        margin-left: 5%;
+    }
+    .add-line-right {
+        margin-left: 5%;
+        margin-right: 0;
+    }
+}
+@media screen and (max-width: 820px) {
+    .footer-link {
+        margin-right: 10px;
+    }
+}
+@media screen and (max-width: 765px) {
+    .toggle {
+        clear: both;
+        display: block;
+        text-align: center;
+        font-size: 18px;
+        line-height: 40px;
+        width: 100%;
+        color: #000;
+        background-color: #ffcc01;
+        transition: all 1s linear;
+    }
+    .toggle:hover {
+        background-color: #d3a900;
+    }
+    #checkbox-menu:checked + label .touch li {
+        opacity: 1;
+        visibility: visible;
+        transition: all .7s linear;
+    }
+    #checkbox-menu:checked + label .touch {
+        height: 350px;
+    }
+    .menu {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        height: 0px;
+        transition: height .3s linear;
+    }
+    .menu li {
+        display: flex;
+        align-self: center;
+        width: 95%;
+        opacity: 0;
+        visibility: hidden;
+    }
+    .menu li a {
+        width: 95%;
+        text-align: center;
+        align-self: center;
+        align-content: center;
+    }
+    .menu li a.logo {
+        font-size: 21px;
+        position: relative;
+        right: 195px;
+    }
+    .menu li a.contacts {
+        margin-right: 0px;
+    }
+    .intro {
+        margin-top: 0;
+        display: block;
+        max-width: 100%;
+    }
+    .intro .intro-img {
+        background-position: bottom 0px right 70px;
+    }
+     .intro .intro-text {
+        position: relative;
+        font-size: 35px;
+        right: 95px;
+        left: 30px;
+        top: 100px;
+        width: 100%;
+        color: rgb(12, 10, 28);
+    }
+     .intro .intro-contacts {
+        left: 0;
+        top: -55px;
+        padding: 20px 10px;
+        position: relative;
+        width: 450px;
+        margin-top: 0;
+    }
+    .intro-contacts p {
+        font-size: 13px;
+        margin-right: 0;
+    }
+    .stats {
+        margin-top: 0;
+        flex-direction: column;
+    }
+    .stats-text {
+        padding: 10px;
+    }
+    .stats-text h2 {
+        font-size: 30px;
+        margin-bottom: 30px;
+    }
+    .stats-text p {
+        margin-top: 5px;
+        font-size: 13px;
+        line-height: 18px;
+    }
+    .square {
+        height: 140px;
+    }
+    .cards {
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(6, 1fr);
+        grid-row-gap: 10px;
+        justify-items: center;
+    }
+    .apart input[type=text] {
+        margin-top: 20px;
+        width: 130px;
+    }
+    .apart input[type=submit] {
+        border-top-left-radius: 0px;
+        border-bottom-left-radius: 0px;
+    }
+    .buttons-search {
+        flex-direction: column;
+        margin-left: 4%;
+    }
+    .all {
+        background: #fff;
+        margin-top: 10px;
+        margin-left: 0;
+    }
+    .steps-container {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .step-block {
+        margin-top: 20px;
+    }
+    .steps-text, .step h2 {
+        margin-left: 5%;
+        margin-bottom: 15px;
+    }
+    .serv-container {
+        margin-top: 20px;
+        flex-direction: column;
+    }
+    .serv-img-container {
+        width: 100%;
+    }
+    .serv-text {
+        width: 90%;
+    }
+    .serv-text .top-heading {
+        margin-top: 30px;
+    }
+    .agent-cards {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .agent-card {
+        margin-top: 10px;
+    }
+    .add-line {
+        flex-direction: column;
+    }
+    .location {
+        font-size: 15px;
+        height: 75px;
+    }
+    .add-line h3 {
+        font-size: 25px;
+        margin-top: 75px;
+        margin-bottom: 40px;
+        margin-left: 5%;
+    }
+    .add-line p {
+        margin-left: 5%;
+    }
+    .add-line-right {
+        margin-left: 5%;
+        margin-right: 0;
+    }
+    .footer-block {
+        flex-direction: column;
+    }
+    .footer-logo h3 {
+        font-size: 25px;
+        text-align: center;
+    }
+    .footer-search input[type=text] {
+        width: 80%;
+        height: 50px;
+        margin-top: 15px;
+        margin-left: 20px;
+    }
+    .footer-search {
+        display: flex;
+        justify-content: center;
+    }
+    .footer-links {
+        flex-wrap: wrap;
+        margin-left: 5%;
+        padding-right: 5%;
+    }
+}
+    </style>
     <script src="https://kit.fontawesome.com/8c5f8983b2.js" crossorigin="anonymous"></script>
 </head>
 <body>
